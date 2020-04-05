@@ -1,0 +1,41 @@
+{
+    "name": "webserver-ts",
+    "version": "1.0.0",
+    "description": "Webserver written in TypeScript.",
+    "author": "o-su",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/o-su/webserver-ts.git"
+    },
+    "bugs": {
+        "url": "https://github.com/o-su/webserver-ts/issues"
+    },
+    "homepage": "https://github.com/o-su/webserver-ts",
+    "keywords": [
+        "webserver",
+        "TypeScript",
+        "http",
+        "https"
+    ],
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "example": "cd ./example && node server.js"
+    },
+    "devDependencies": {
+        "typescript": "*",
+        "@types/node": "*",
+        "prettier": "*"
+    },
+    "prettier": {
+        "useTabs": false,
+        "tabWidth": 4,
+        "printWidth": 100,
+        "singleQuote": false
+    }
+}
