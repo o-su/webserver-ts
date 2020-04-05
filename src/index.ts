@@ -4,6 +4,8 @@ import * as path from "path";
 
 import { Resource, MatchRequestData } from "./types";
 
+export * from "./types";
+
 export class Webserver {
     private server: http.Server;
     private resources: Resource[] = [];

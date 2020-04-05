@@ -2,7 +2,7 @@ import * as http from "http";
 
 export type Resource = {
     match: (data: MatchRequestData) => boolean;
-    onRequest: (data: RequestData) => boolean;
+    onRequest: (data: RequestData) => void;
 };
 
 export type RequestData = { response: http.ServerResponse } & MatchRequestData;
